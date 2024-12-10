@@ -16,20 +16,25 @@ This repository contains a sample test automation framework using [Playwright](h
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
+   python -m venv venv
    ```
 
-python -m venv venv
-# On Linux/MacOS:
-source venv/bin/activate
-# On Windows:
-venv\Scripts\activate
 
+### On Linux/MacOS:
+```bash
+source venv/bin/activate.
+   ```
+### On Windows:
+```bash
+venv\Scripts\activate
+   ```
 
 3. **Install dependencies:**
-
+```bash
 pip install -r requirements.txt
-
+   ```
 
 ## Running Tests
-
+```bash
 python -m pytest tests/test_buy_flow.py
+   ```
