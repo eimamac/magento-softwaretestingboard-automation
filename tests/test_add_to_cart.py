@@ -17,7 +17,7 @@ def test_add_to_cart(page):
 
     catalogue_page.select_product('Push It Messenger Bag')
     pdp_page.click_element(pdp_page.BUTTON_ADD_TO_CART)
-    time.sleep(2)
+    page.wait_for_load_state("networkidle")
     
     counter_text = page.inner_text(top_nav.COUNTER_NUMBER)
     assert counter_text == '1'
